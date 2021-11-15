@@ -1,4 +1,7 @@
 soong_namespace {
+    imports: [
+        "vendor/qcom/opensource/commonsys-intf/display"
+    ],
 }
 
 soong_config_module_type {

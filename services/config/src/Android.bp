@@ -12,13 +12,16 @@ cc_library_shared {
         "libutils",
         "vendor.display.config@2.0"
     ],
-    header_libs: ["libhardware_headers", "display_intf_headers"],
+    header_libs: [
+        "libhardware_headers",
+        "//vendor/qcom/opensource/commonsys-intf/display:display_intf_headers"
+    ],
     srcs: [
         "client_interface.cpp",
         "client_impl.cpp",
         "device_impl.cpp",
         "device_interface.cpp",
     ],
-    export_header_lib_headers: ["display_intf_headers"],
+    export_header_lib_headers: ["//vendor/qcom/opensource/commonsys-intf/display:display_intf_headers"],
 }
 
